@@ -1,0 +1,129 @@
+.projects{
+
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  min-height: 100vh;
+
+  box-sizing: border-box;
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
+  background-image:url('./../../../../assets/1x/backgroundProject.png') ;
+  background-repeat: no-repeat; /* Evita la repetición */
+  background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+  background-position: center;
+}
+
+@font-face {
+  font-family:'project-name';
+  src: url('./../../../../assets/FugazOne-Regular.ttf');
+}
+
+.title{
+  color:rgb(167, 24, 254);
+  font-family: 'title';
+  font-size: 60px;
+  margin-top: 20 px 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+
+  gap: 20px; /* Espaciado entre elementos */
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo del grid */
+  margin: 0 auto; /* Centra el grid */
+
+}
+.image-item {
+  position: relative;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.05); /* Zoom suave al pasar el mouse */
+}
+
+
+.project-name{
+  margin-top: 10px;
+  font-family: 'project-name';
+  font-size: 36px;
+  color: rgb(49, 174, 160);
+}
+
+.caption{
+  font-family: 'text-p';
+  font-size: 22px;
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+
+.description{
+  font-family: 'text-p';
+  font-size: 18px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 768px) {
+  .image-layout {
+    grid-template-columns: 1fr; /* Cambia a una columna */
+    transform: scale(1.05); /* Zoom suave al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .title {
+    font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    color: aliceblue;
+  }
+  .image-item img {
+    max-width: 300px; /* Tamaño máximo reducido */
+    max-height: 200px; /* Límite de altura para pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yatra+One&display=swap');
+
+@font-face {
+  font-family: 'text-p';
+  src: url('./assets/Catchye.otf');
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+@font-face {
+  font-family:'h1-font' ;
+  src: url('./assets/ElaineKinandhita.ttf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* Asegura que ocupen toda la altura */
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('./assets/Revamped.otf');
+}
+
+@font-face {
+  font-family: 'form';
+  src: url('./assets/BhuTukaExpandedOne-Regular.ttf');
+}
+
+.social-icons {
+  position: fixed;      /* Fija la posición de los iconos */
+  left:20px;           /* Los coloca a 10px del borde izquierdo */
+  top: 90%;             /* Los coloca a la mitad de la altura de la pantalla */
+  transform: translateY(-50%); /* Ajusta la alineación para que estén perfectamente centrados */
+  display: flex;        /* Utiliza Flexbox para alinear los iconos en una columna */
+  flex-direction: column; /* Organiza los iconos en una columna */
+  align-items: center;  /* Centra los iconos horizontalmente */
+  z-index: 1000;        /* Asegura que los iconos se mantengan sobre otros elementos */
+}
+
+.social-icons a {
+  font-size: 30px;  /* Tamaño de los iconos */
+  margin: 20px 0;   /* Espacio entre los iconos */
+  color: #f9f4f4;      /* Color de los iconos */
+  text-decoration: none;  /* Elimina el subrayado */
+}
+
+.social-icons a:hover {
+  color: #f5f4f9;  /* Cambia el color al pasar el ratón (puedes personalizarlo) */
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(167, 24, 254),
+    0 0 80px rgb(167, 24, 254),
+    0 0 90px rgb(167, 24, 254),
+    0 0 100px rgb(167, 24, 254),
+    0 0 150px rgb(167, 24, 254);
+}
+
