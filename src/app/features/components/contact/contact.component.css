@@ -1,0 +1,103 @@
+.contact{
+  display: flex;
+flex-direction: column;
+justify-content: center; /* Centra verticalmente */
+align-items: center; /* Centra horizontalmente */
+width: 100%;
+height: 100vh; /* Ocupa toda la altura de la pantalla */
+box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño */
+margin: 0; /* Elimina márgenes */
+padding: 0; /* Elimina relleno */
+background-image:url('./../../../../assets/1x/backgroundContact.png') ;
+background-repeat: no-repeat; /* Evita la repetición */
+background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+background-position: center; /* Centra la imagen */
+}
+
+h1{
+  font-family: 'contact';
+  color: rgb(167, 24, 254);
+}
+
+label{
+  font-family: 'form';
+  color: rgb(167, 24, 255);
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(167, 24, 254),
+    0 0 80px rgb(167, 24, 254),
+    0 0 90px rgb(167, 24, 254),
+    0 0 100px rgb(167, 24, 254),
+    0 0 150px rgb(167, 24, 254);
+}
+
+
+.contact-form {
+  max-width: 600px;
+  width: 100%; /* Asegura que el formulario no exceda su contenedor */
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(49, 174, 160);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Asegura que los inputs no excedan el ancho del formulario */
+  padding: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ecb153;
+  border-radius: 4px;
+  box-sizing: border-box; /* Maneja correctamente el padding dentro del ancho */
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: rgba(49,174,160);
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(167, 24, 254),
+    0 0 80px rgb(167, 24, 254),
+    0 0 90px rgb(167, 24, 254),
+    0 0 100px rgb(167, 24, 254),
+    0 0 150px rgb(167, 24, 254);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Asegura que el botón también esté dentro del formulario */
+
+  text-shadow: 20px20px rgb(189, 223, 219);
+
+
+}
+
+.contact-form button:disabled {
+  background-color: rgb(244, 141, 5);
+  cursor: not-allowed;
+  font-family: 'button';
+  font-weight: 900;
+  font-size: 20px;
+  text-shadow: 20px20px rgb(192, 227, 223);
+}
+@font-face {
+  font-family: 'button';
+  src: url('./../../../../assets/KodeMono-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'contact';
+  src: url('./../../../../assets/StalinistOne-Regular.ttf');
+}

@@ -1,0 +1,40 @@
+<section class="contact">
+
+
+  <div class="contact-form">
+    <h1>Contacto</h1>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+      <div>
+
+        <label for="name">Nombre:</label>
+        <input id="nombre" type="text" formControlName="nombre">
+        <div *ngIf="contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched">
+          <small *ngIf="contactForm.get('nombre')?.errors?.['required']"> El nombre es obligatorio.</small>
+          <small *ngIf="contactForm.get('nombre')?.errors?.['minlength']"> Debe tener al menos 3 caracteres.</small>
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" formControlName="email">
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+          <small *ngIf="contactForm.get('email')?.errors?.['required']">El email es obligatorio.</small>
+          <small *ngIf="contactForm.get('email')?.errors?.['email']">El email no es válido.</small>
+        </div>
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" formControlName="mensaje"></textarea>
+        <div *ngIf="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched">
+          <small *ngIf="contactForm.get('mensaje')?.errors?.['required']">El mensaje es obligatorio.</small>
+          <small *ngIf="contactForm.get('mensaje')?.errors?.['minlength']">Debe tener al menos 10 caracteres.</small>
+        </div>
+      </div>
+
+      <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+    </form>
+</div>
+</section>
